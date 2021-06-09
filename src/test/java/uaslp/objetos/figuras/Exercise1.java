@@ -101,7 +101,7 @@ public class Exercise1 {
 
         // Then:
         Assertions.assertEquals(lado, poligono.getLado());
-        Assertions.assertEquals(259.8076211353316, area);
+        Assertions.assertEquals(259.80762113533166, area);
     }
 
 }
