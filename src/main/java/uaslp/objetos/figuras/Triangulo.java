@@ -1,10 +1,16 @@
 package uaslp.objetos.figuras;
 
-public class Triangulo {
+public class Triangulo extends Figura{
 
     private double base;
     private double altura;
     private double area;
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    private String description;
 
     public Triangulo() {
     }
@@ -35,4 +41,9 @@ public class Triangulo {
     public double getAltura() {
         return altura;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
 }

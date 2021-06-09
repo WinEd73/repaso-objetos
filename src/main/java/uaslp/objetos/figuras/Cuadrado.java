@@ -1,6 +1,6 @@
 package uaslp.objetos.figuras;
 
-public class Cuadrado {
+public class Cuadrado extends Figura{
 
     private double lado;
     private double area;
