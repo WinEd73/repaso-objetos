@@ -2,7 +2,7 @@ package uaslp.objetos.figuras;
 
 public class Cuadrado implements Figura {
 
-    private double lado;
+    private Double lado;
     private double area;
 
     public Cuadrado() {
@@ -16,7 +16,10 @@ public class Cuadrado implements Figura {
         this.lado=lado;
     }
 
-    public double getArea() {
+    public double getArea() throws LadoNoProvistoException {
+        if(lado == null){
+            throw new LadoNoProvistoException();
+        }
         area = lado*lado;
         return area;
     }

@@ -2,9 +2,9 @@ package uaslp.objetos.figuras;
 
 public class Triangulo implements Figura{
 
-    private double base;
-    private double altura;
-    private double area;
+    private Double base;
+    private Double altura;
+    private Double area;
     private String description;
 
     public void setDescription(String description) {
@@ -29,6 +29,12 @@ public class Triangulo implements Figura{
     }
 
     public double getArea() {
+        if(base == null){
+            throw new BaseNoProvistaException();
+        }
+        if(altura == null){
+            throw new AlturaNoProvistaException();
+        }
         area = (base*altura)/2;
         return area;
     }

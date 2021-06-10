@@ -12,7 +12,7 @@ public class Exercise1 {
     // NO DEBES MODIFICAR PARA NADA ESTA CLASE
 
     @Test
-    public void testCuadrado(){
+    public void testCuadrado() throws LadoNoProvistoException {
         // Given:
         Cuadrado cuadrado = new Cuadrado();
         double lado = 10;
@@ -27,7 +27,7 @@ public class Exercise1 {
     }
 
     @Test
-    public void testConstructorCuadrado(){
+    public void testConstructorCuadrado() throws LadoNoProvistoException {
         // Given:
         double lado = 10;
         Cuadrado cuadrado = new Cuadrado(lado);
